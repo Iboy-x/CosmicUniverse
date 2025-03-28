@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Cosmic Universe - Explore the Cosmos</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="hero-content">
+                <h1>Welcome to Cosmic Universe</h1>
+                <p class="tagline">Explore the Wonders of Space</p>
+                <a href="planets.html" class="cta-button">Explore Planets</a>
+            </div>
+        </section>
+
+        <section class="featured-items">
+            <h2>Featured Planets</h2>
+            <div class="items-grid">
+                <div class="menu-item">
+                    <img src="images/mars.jpg" alt="Mars" class="item-image">
+                    <h3>Mars</h3>
+                    <p>The Red Planet - Our next frontier</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/jupiter.jpg" alt="Jupiter" class="item-image">
+                    <h3>Jupiter</h3>
+                    <p>The Giant of our Solar System</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/saturn.jpg" alt="Saturn" class="item-image">
+                    <h3>Saturn</h3>
+                    <p>Lord of the Rings</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Cosmic Events 2025</h2>
+            <ul class="events-list">
+                <li>🌕 Total Lunar Eclipse - September 7, 2025</li>
+                <li>☀️ Partial Solar Eclipse - September 21, 2025</li>
+                <li>🌠 Planetary Cluster - April 12-18, 2025</li>
+                <li>💫 Eta Aquarids Meteor Shower - May 3-5, 2025</li>
+                <li>🌌 Planetary Parade - February 25, 2025</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cosmic Universe</h3>
+                <p>Explore the Wonders of Space</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planets.html">Planets</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="https://github.com/iboy-x/" target="_blank">GitHub</a>
+                <a href="mailto:abdulmoiz.adeel29@gmail.com" class="contact-link">Contact Dev</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cosmic Universe. Made with ❤️ by iboy-x</p>
+        </div>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="audio/interstellar-theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Add audio controls
+        const audio = document.getElementById('background-music');
+        audio.volume = 0.3; // Set volume to 30%
+        audio.play().catch(function(error) {
+            console.log("Audio play failed:", error);
+        });
+    </script>
+</body>
+</html> 

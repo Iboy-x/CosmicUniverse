@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌠 Lost in Space - Cosmic Universe</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="error-page">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Lost in Space</h2>
+            <div class="astronaut">
+                <img src="images/lost-astronaut.png" alt="Lost Astronaut" class="floating">
+            </div>
+            <p>Houston, we have a problem! This page seems to have drifted into a black hole.</p>
+            <div class="error-details">
+                <p>Don't worry, our mission control team is here to help you navigate back to safety.</p>
+                <p>You can:</p>
+                <ul>
+                    <li>Return to our home base</li>
+                    <li>Check your coordinates</li>
+                    <li>Contact mission control</li>
+                </ul>
+            </div>
+            <a href="index.html" class="cta-button">Return to Earth</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cosmic Universe</h3>
+                <p>Explore the Wonders of Space</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planets.html">Planets</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="https://github.com/iboy-x" target="_blank">GitHub</a>
+                <a href="mailto:hello@cosmicuniverse.com" class="contact-link">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cosmic Universe. Made with ❤️ and stardust!</p>
+        </div>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="audio/interstellar-theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Add audio controls
+        const audio = document.getElementById('background-music');
+        audio.volume = 0.3; // Set volume to 30%
+        audio.play().catch(function(error) {
+            console.log("Audio play failed:", error);
+        });
+    </script>
+</body>
+</html> 
